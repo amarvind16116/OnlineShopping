@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.Product" table="products">
+	
+		<id name="product_id" type="int" column="p_id">
+			<generator class="native" />
+		</id>
+		<property name="product_name" column="product_name"/>
+		<property name="model_no" column="Model_No"/>
+		<property name="mrp_price" type="int" column="MRP_Price"/>
+		<property name="sell_price" type="int" column="Sell_Price"/>
+		<property name="brand" column="brand"/>
+		<property name="category" type="int" column="category"/>
+		<property name="stock" type="int" column="Stock"/>
+		<property name="img" column="image"/>
+		<property name="desc" column="description"/>
+		<property name="seller" column="seller"/>
+		<property name="dtime" column="dtime"/>
+	
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.Order" table="orderss">
+	
+		<id name="order_id" type="int" column="order_id">
+			<generator class="native" />
+		</id>
+		<property name="product_name" column="product_name"/>
+		<property name="OrderDate" type="timestamp" column="OrderDate"/>
+		<property name="OrderTime" type="timestamp" column="OrderTime"/>
+		<property name="quantity" type="int" column="quantity"/>
+		<property name="total" type="int" column="total"/>
+	
+	</class>
+</hibernate-mapping>

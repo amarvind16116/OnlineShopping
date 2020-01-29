@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.Brand" table="brands">
+	
+		<id name="brand_id" type="int" column="brand_id">
+			<generator class="native" />
+		</id>
+		<property name="brand_name" column="brand_name"/>
+		<property name="brand_logo" column="brand_logo"/>
+		<property name="brand_pid" type="int" column="brand_pid"/>
+	</class>
+</hibernate-mapping>

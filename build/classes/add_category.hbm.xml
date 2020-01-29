@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.Category" table="categories">
+	
+		<id name="c_id" type="int" column="c_id">
+			<generator class="native" />
+		</id>
+		<property name="cat" column="cat_name"/>
+		<property name="p_id" type="int" column="p_id"/>
+	
+	</class>
+</hibernate-mapping>
